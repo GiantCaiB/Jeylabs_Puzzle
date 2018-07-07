@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="app">
+
+    @using (Html.BeginForm("HandleCommand", "Home"))
+    {
+    <form class="userInput" method="post">
+        <b>Please enter your command in the text box below:<br /></b>
+        e.g: Draw a rectangle with a width of 250 and a height of 400<br />
+        *This is an 800*800 canvas, oversized shape may be not displayed properly.<br />
+        <div class="errMsg">@ViewData["Error"]</div>
+        <input class="commandLine" type="text" name="command" />
+        <input type="submit" name="button" value="Draw it!" />
+    </form>
+    }
+    <div class=" display">
+        <img src="~/images/shape.JPG" alt="Shape">
+    </div>
+</div>
+
