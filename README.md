@@ -1,10 +1,6 @@
-# Jeylabs_Puzzle
-Wenfei Yu's code for Jeylabs puzzle
+Feedback:
+The code didn’t demonstrate many of the language features, like DI, interfaces, inheritance or polymorphism. 
+ 
+As a result code quality was lacking and could have been significantly cleaner and logically grouped by responsibility for a modular future-proof and reusable design (ie polygon class, triangle class, square/rect class, base shape class, string parser etc). 
 
-This is an ASP.NET Core Web App. 
-
-***Better to use Safari to run the app. If want to run with Chrome, please clear the cached images after the first time running, to make sure the result is displayed properly.
-
-The shape image locates in "wwwroot/images". 
-
-Thanks for your time to view this code.
+Doesn't contain unit tests (a requirement for any production ready app).
